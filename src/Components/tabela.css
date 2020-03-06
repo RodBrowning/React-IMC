@@ -1,0 +1,48 @@
+.table {
+    overflow-x: hidden;
+    width: 800px;
+    max-width: 85%;
+    margin: 20px;
+
+}
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+thead {
+    background-image: linear-gradient(to bottom, black, #232323, #3a3737 , #0b1514, #15524cb3 );
+    color: white;
+    mix-blend-mode: luminosity;
+    text-shadow: 0px 0px 5px #928888;
+}
+tbody {
+    /* background-image: radial-gradient(#ffffffa3, #dadada57 ); */
+    color: black;
+    text-shadow: 0px 0px 5px #ccc5c5;
+    font-weight: 700;
+    
+}
+thead th {
+    height: 40px;
+}
+tbody tr {
+    background-image: linear-gradient(to right, #ffffff3d, #dadada8f );
+    animation: showTr 1s ease-in;
+    height: 50px;
+    border-bottom: 2px solid #5f5f5f;
+    transform-origin: bottom;
+    transform: scaleY(1);
+    transition: transform .35s;
+    font-size: 1.3rem;
+}
+thead th td,  tbody tr td {
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .table {
+        overflow-x: scroll;
+    }
+}
